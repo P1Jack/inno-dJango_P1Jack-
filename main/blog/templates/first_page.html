@@ -1,0 +1,44 @@
+ <div class="context">
+     <div class="container">
+
+
+    <h1>King of the Django</h1>
+    <i>by <a href="/aboutme">@P1Jack</a></i>
+    <hr>
+
+    {% for post in posts %}
+    <h2>{{ post.heading }}</h2>
+    <p>{{ post.text }}</p>
+    <i>{{post.created_at }} by {{post.author }}</i>
+    <br>
+    <br>
+    <br>
+    {% endfor %}
+
+</div>
+    </div>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 King of the Django. All rights reserved.</p>
+        <p>Designed by <a href="/aboutme">@P1Jack</a></p>
+        <p>Back to main page: <a href="/home">Home page</a></p>
+    </div>
+</footer>
+<link rel="stylesheet" href="static/style/style.css">
+
